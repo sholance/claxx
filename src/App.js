@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { styled } from 'baseui';
+import { Heading, HeadingLevel } from 'baseui/heading'
+import { Block } from 'baseui/block';
+import { StatefulTabs, Tab } from "baseui/tabs-motion";
+import NavBar from './components/navbar';
+import Projects from './components/projects';
+import "./App.css"
+import Classes from './components/classes';
 
-function App() {
+// const Wrap = styled('section', {
+//   display: 'flex',
+//   justifyContent: 'center',
+//   alignItems: 'center',
+//   width: "100%"
+// });
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Block>
+      <HeadingLevel>
+        <NavBar />
+      </HeadingLevel>
+    </Block>
   );
 }
-
-export default App;
