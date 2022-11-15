@@ -1,5 +1,5 @@
 # Clax- Virtual Classroom
-ClassRoom with IPFS
+ClassRoom with IPFS (WIP)
 
 The aim is to provide flexible access to any coursework from around the world to anyone with a internet access supported by IPFS
 
